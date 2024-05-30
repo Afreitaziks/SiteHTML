@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style> h1{background-color: palevioletred; top: 0%; margin: 0%;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova HTML</title>
+</head>
+<body class="light-mode">
+    <header>
+        <h1 style="font-size: 60px; color: black; border: 0px;">Meu Site</h1>
+    </header>
+    <main style="text-align: center;">
+        <button class="botao"><a href="Dog.html" style="font-size: 25px;">Dog</a></button>
+        <button class="botao2"><a href="Polindromo.html" style="font-size: 25px;">Políndromo</a></button>
+        <button class="botao3"><a href="Game.html" style="font-size: 25px;">Game Button</a></button>
+    </main>
+    <p class="textobuxa">
+        Olá! Me chamo Ana Carolina, sou do Rio de Janeiro, tenho 22 anos e estou cursando o 3º período de Análise e Desenvolvimento de Sistemas.
+    </p>
+    <picture>
+        <img src="./imagens/freitas.png" alt="freitas">
+    </picture>
+    <p class="textobuxa">
+        Dentro desse site, você poderá ver a minha cachorrinha, verificar se uma palavra qualquer é um palíndromo, testar o clique do seu mouse e alternar o tema do site entre claro e escuro.
+    </p>
+    <button class="nightmode" onclick="toggleNightMode()">Night Mode</button>
+
+    <script>
+        function toggleNightMode() {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Buttom</title>
+</head>
+<body style="background-color: paleturquoise;"> 
+    <h1 style="background-color: palevioletred;"> Tente clicar no botão </h1>
+    
+<button class="btn" id="myBtn">oi</button>
+
+<script>
+    document.getElementById('myBtn').addEventListener('click', function(event) {
+        event.stopPropagation();
+        alert('Voce acertou!');
+    });
+
+    window.addEventListener('click', function() {
+        alert('Voce errou!');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+h1{ padding: 30px;}
+body {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.botao {
+    background-color: pink;
+    border-radius: 10px;
+    margin: 5px;
+    border: 5px;
+    text-decoration: none;
+    font-family: "Poetsen One", sans-serif;
+    height: auto;
+    text-align: center;
+    max-width: fit-content;
+    
+}
+.botao2 {
+    background-color: pink;
+    border-radius: 10px;
+    margin: 5px;
+    border: 5px;
+    text-decoration: none;
+    font-family: "Poetsen One", sans-serif;
+    height: auto;
+    text-align: center;
+    max-width: fit-content;
+    
+}
+.botao3 {
+    background-color: pink;
+    border-radius: 10px;
+    margin: 5px;
+    border: 5px;
+    text-decoration: none;
+    font-family: "Poetsen One", sans-serif;
+    height: auto;
+    text-align:calc(30px);
+    max-width: fit-content;
+    
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: large;
+}
+h1{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.textobuxa{ 
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+picture{ 
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width:100%;
+}
+.dog:hover::before{
+    content: url('./imagens/lollafeliz.png'); 
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    cursor: pointer;
+    display: inline-block ;
+}
+.nightmode{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-family: "Poetsen One", sans-serif;
+    cursor: pointer;
+}
+.dog {
+    display: inline-block;
+    display: block; 
+    transition: opacity 0.3s ease-in-out;
+    
+}
+.dog-container {
+    display: inline-block;
+}
+.dog-container:hover .imagem {
+    opacity: 0; 
+}
+.btn {
+    background-color: purple;
+    font-size: 5px;
+    padding: 0.2px 0.2px;
+    cursor: pointer;
+}
+button:hover, .botao:hover, .botao2:hover, .botao3:hover {
+    background-color: #ff69b4;
+}
+.nightmode:hover {
+    background-color: #ff69b4;
+}
+body.light-mode {
+    background-color: paleturquoise;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}

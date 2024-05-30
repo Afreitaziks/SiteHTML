@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: plum;
+        }
+        .container {
+            text-align: center;
+            background: palevioletred;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid paleturquoise;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            background-color: paleturquoise;
+            color: black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: turquoise;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header> <h1 style="background-color: palevioletred;"> Palíndromo ou não, lá vou eu...</h1>
+    </header>
+    <div class="container">
+        <h1>Verificar Palíndromo</h1>
+        <input type="text" id="palavra" placeholder="Digite uma palavra">
+        <button onclick="verificarPalindromo()">Verificar</button>
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script>
+        function verificarPalindromo() {
+            const palavra = document.getElementById('palavra').value;
+            const palavraReversa = palavra.split('').reverse().join('');
+            const resultado = document.getElementById('resultado');
+
+            if (palavra === palavraReversa) {
+                resultado.textContent = `"${palavra}" é um palíndromo.`;
+                resultado.style.color = 'white';
+            } else {
+                resultado.textContent = `"${palavra}" não é um palíndromo.`;
+                resultado.style.color = 'black';
+            }
+        }
+    </script>
+</body>
+</html>
